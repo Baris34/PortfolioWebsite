@@ -124,8 +124,55 @@ async function loadGames() {
         // Render games grid if container exists
         renderGamesGrid(gamesArray);
 
+        // Initialize Hero Section (Random Game)
+        initHeroSection(gamesArray);
+
     } catch (error) {
         console.error('Error loading games:', error);
+    }
+}
+
+// Initialize Hero Section
+function initHeroSection(gamesArray) {
+    const heroCard = document.getElementById('hero-card');
+    if (!heroCard || gamesArray.length === 0) return;
+
+    // Pick a random game
+    const randomGame = gamesArray[Math.floor(Math.random() * gamesArray.length)];
+
+    // Get DOM elements
+    const heroImg = document.getElementById('hero-img');
+    const heroTitle = document.getElementById('hero-title');
+    const heroTags = document.getElementById('hero-tags');
+
+    // Update Content
+    if (heroTitle) heroTitle.innerText = randomGame.title;
+
+    if (heroImg) {
+        // Fix path for root directory (remove ../)
+        let imgPath = randomGame.media.find(m => m.type === 'image')?.src || 'assets/images/placeholder.png';
+        // If path is relative (starts with ../), remove it for root index.html
+        // But if it's an absolute URL (cloudinary), keep it as is
+        if (imgPath.startsWith('../')) {
+            imgPath = imgPath.substring(3);
+        }
+        heroImg.src = imgPath;
+    }
+
+    if (heroTags) {
+        heroTags.innerHTML = randomGame.tags.slice(0, 3).map(tag => `<span class="tag">${tag}</span>`).join('');
+    }
+
+    // Add Click Event to Open Modal
+    heroCard.onclick = () => openModal(randomGame.id);
+
+    // Initialize Vanilla Tilt
+    if (typeof VanillaTilt !== 'undefined') {
+        VanillaTilt.init(heroCard, {
+            max: 8,            // max tilt rotation (degrees)
+            speed: 400,         // Speed of the enter/exit transition
+            scale: 1.05         // 2 = 200%, 1.5 = 150%, etc..
+        });
     }
 }
 
