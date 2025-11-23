@@ -1,0 +1,98 @@
+[
+  {
+    "id": "cyberpunk",
+    "title": "Neon City: Uprising",
+    "desc": "Neon City: Uprising, 2077 yılında geçen distopik bir aksiyon-macera oyunudur. Oyuncular, mega şirketlerin yönettiği bir şehirde hayatta kalmaya çalışan bir paralı askeri kontrol eder. Gelişmiş hack mekanikleri, hızlı dövüş sistemi ve dallanan hikaye yapısı ile benzersiz bir deneyim sunar.",
+    "tags": [
+      "Unity",
+      "C#",
+      "Action",
+      "RPG"
+    ],
+    "githubUrl": "https://github.com/kullaniciadi/neon-city",
+    "playUrl": "https://itch.io/neon-city",
+    "media": [
+      {
+        "type": "video",
+        "videoUrl": "https://www.youtube.com/embed/sDmkypJlW54?si=eeuM_wjMvRwjbSRY",
+        "poster": "https://res.cloudinary.com/dzandhhgx/image/upload/v1763929472/cyberpunk_w2sxvz.webp"
+      },
+      {
+        "type": "image",
+        "src": "https://res.cloudinary.com/dzandhhgx/image/upload/v1763929472/cyberpunk_w2sxvz.webp"
+      },
+      {
+        "type": "image",
+        "src": "https://res.cloudinary.com/dzandhhgx/image/upload/v1763929472/fantasy_ieivwt.webp"
+      },
+      {
+        "type": "image",
+        "src": "https://res.cloudinary.com/dzandhhgx/image/upload/v1763929472/scifi_hfq49l.webp"
+      }
+    ]
+  },
+  {
+    "id": "fantasy",
+    "title": "Aether Chronicles",
+    "desc": "Aether Chronicles, gökyüzünde süzülen adalar arasında geçen bir açık dünya RPG oyunudur. Kadim büyüleri keşfedin, ejderhalarla savaşın ve kayıp krallığın sırlarını çözün. Unreal Engine 5 ile geliştirilen oyun, nefes kesici manzaralar ve derin bir crafting sistemi sunuyor.",
+    "tags": [
+      "Unreal Engine",
+      "C++",
+      "Open World",
+      "Fantasy"
+    ],
+    "githubUrl": "https://github.com/kullaniciadi/aether-chronicles",
+    "playUrl": "https://itch.io/aether-chronicles",
+    "media": [
+      {
+        "type": "video",
+        "videoUrl": "https://www.youtube.com/embed/sDmkypJlW54?si=eeuM_wjMvRwjbSRY",
+        "poster": "https://res.cloudinary.com/dzandhhgx/image/upload/v1763929472/fantasy_ieivwt.webp"
+      },
+      {
+        "type": "image",
+        "src": "https://res.cloudinary.com/dzandhhgx/image/upload/v1763929472/fantasy_ieivwt.webp"
+      },
+      {
+        "type": "image",
+        "src": "https://res.cloudinary.com/dzandhhgx/image/upload/v1763929472/cyberpunk_w2sxvz.webp"
+      },
+      {
+        "type": "image",
+        "src": "https://res.cloudinary.com/dzandhhgx/image/upload/v1763929472/scifi_hfq49l.webp"
+      }
+    ]
+  },
+  {
+    "id": "scifi",
+    "title": "Void Runner",
+    "desc": "Void Runner, reflekslerinizi test eden yüksek hızlı bir uzay shooter oyunudur. Prosedürel olarak oluşturulan bölümlerde sonsuz düşman dalgalarına karşı savaşın. Gemi özelleştirme sistemi ve global liderlik tablosu ile rekabetçi bir deneyim.",
+    "tags": [
+      "Godot",
+      "GDScript",
+      "Arcade",
+      "Shooter"
+    ],
+    "githubUrl": "https://github.com/kullaniciadi/void-runner",
+    "playUrl": "https://itch.io/void-runner",
+    "media": [
+      {
+        "type": "video",
+        "videoUrl": "https://www.youtube.com/embed/sDmkypJlW54?si=eeuM_wjMvRwjbSRY",
+        "poster": "https://res.cloudinary.com/dzandhhgx/image/upload/v1763929472/scifi_hfq49l.webp"
+      },
+      {
+        "type": "image",
+        "src": "https://res.cloudinary.com/dzandhhgx/image/upload/v1763929472/scifi_hfq49l.webp"
+      },
+      {
+        "type": "image",
+        "src": "https://res.cloudinary.com/dzandhhgx/image/upload/v1763929472/cyberpunk_w2sxvz.webp"
+      },
+      {
+        "type": "image",
+        "src": "https://res.cloudinary.com/dzandhhgx/image/upload/v1763929472/fantasy_ieivwt.webp"
+      }
+    ]
+  }
+]

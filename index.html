@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barış Kaya | Junior Game Developer</title>
+    <meta name="description"
+        content="Barış Kaya - Junior Game Developer Portfolyosu. Unity ve C# ile geliştirilen oyunlar.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <canvas id="bg-canvas"></canvas>
+
+    <nav class="navbar">
+        <div class="logo">BARIŞ<span class="highlight">KAYA</span></div>
+        <ul class="nav-links">
+            <li><a href="/" class="active">Ana Sayfa</a></li>
+            <li><a href="/games/">Oyunlarım</a></li>
+            <li><a href="#about">Hakkımda</a></li>
+            <li><a href="#contact">İletişim</a></li>
+        </ul>
+        <div class="hamburger">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1 class="glitch" data-text="Barış Kaya">Barış Kaya</h1>
+            <p class="subtitle">Junior Game Developer</p>
+
+            <!-- Showreel / Featured Project Section -->
+            <div class="showreel-container">
+                <div class="showreel-wrapper">
+                    <img src="assets/images/cyberpunk.png" alt="Featured Game Showreel" class="showreel-thumb">
+                    <div class="play-overlay">
+                        <div class="play-button">
+                            <i class="fas fa-play"></i>
+                        </div>
+                        <span>Showreel'i İzle</span>
+                    </div>
+                </div>
+                <div class="featured-info">
+                    <span class="featured-label">Öne Çıkan Proje</span>
+                    <h3>Neon City: Uprising</h3>
+                    <p>En son geliştirdiğim Cyberpunk temalı aksiyon oyunu.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="scroll-indicator">
+            <span>Aşağı Kaydır</span>
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </header>
+
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title">Hakkımda</h2>
+                    <p>Merhaba! Ben Barış. Unity ve C# kullanarak hayal gücümü dijital dünyalara aktaran bir oyun
+                        geliştiricisiyim. Kod yazmayı sadece bir iş değil, bir sanat formu olarak görüyorum. Her
+                        projemde oyunculara yeni deneyimler sunmayı ve hikayeler anlatmayı hedefliyorum.</p>
+                    <div class="stats">
+                        <div class="stat-item">
+                            <span class="number">Junior</span>
+                            <span class="label">Seviye</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="number">Unity</span>
+                            <span class="label">Uzmanlık</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="number">C#</span>
+                            <span class="label">Dil</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">İletişime <span class="highlight">Geç</span></h2>
+            <div class="contact-wrapper">
+                <form class="contact-form">
+                    <div class="input-group">
+                        <input type="text" placeholder="Adınız" required>
+                    </div>
+                    <div class="input-group">
+                        <input type="email" placeholder="E-posta Adresiniz" required>
+                    </div>
+                    <div class="input-group">
+                        <textarea placeholder="Mesajınız" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Gönder</button>
+                </form>
+                <div class="social-links">
+                    <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-discord"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Barış Kaya. Tüm hakları saklıdır.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
