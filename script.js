@@ -171,7 +171,8 @@ function initHeroSection(gamesArray) {
         VanillaTilt.init(heroCard, {
             max: 8,            // max tilt rotation (degrees)
             speed: 400,         // Speed of the enter/exit transition
-            scale: 1.05         // 2 = 200%, 1.5 = 150%, etc..
+            scale: 1.05,         // 2 = 200%, 1.5 = 150%, etc..
+            gyroscope: false
         });
     }
 }
