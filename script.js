@@ -120,14 +120,52 @@ async function loadGames() {
         });
 
         console.log('Games loaded successfully:', games);
+
+        // Render games grid if container exists
+        renderGamesGrid(gamesArray);
+
     } catch (error) {
         console.error('Error loading games:', error);
     }
 }
 
-// Load games when page loads
-loadGames();
+// Render Games Grid
+function renderGamesGrid(gamesArray) {
+    const gridContainer = document.getElementById('games-grid');
+    if (!gridContainer) return;
 
+    gridContainer.innerHTML = ''; // Clear existing content
+
+    gamesArray.forEach(game => {
+        // Get first image as thumbnail
+        const thumbnail = game.media.find(m => m.type === 'image')?.src || 'assets/images/placeholder.png';
+
+        const card = document.createElement('div');
+        card.className = 'project-card';
+        card.onclick = () => openModal(game.id);
+
+        card.innerHTML = `
+            <div class="card-image">
+                <img src="${thumbnail}" alt="${game.title}">
+                <div class="overlay">
+                    <div class="play-btn"><i class="fas fa-expand"></i> İncele</div>
+                </div>
+            </div>
+            <div class="card-content">
+                <div class="tags">
+                    ${game.tags.slice(0, 2).map(tag => `<span class="tag">${tag}</span>`).join('')}
+                </div>
+                <h3>${game.title}</h3>
+                <p>${game.desc.substring(0, 100)}...</p>
+            </div>
+        `;
+
+        gridContainer.appendChild(card);
+    });
+
+    // Initialize card effects (blur background etc)
+    initGameCards();
+}
 
 // Modal Logic
 const modal = document.getElementById('game-modal');
@@ -205,8 +243,6 @@ function openModal(gameId) {
             el.classList.toggle('active', idx === index);
         });
     };
-
-
 
     // Initialize with first item
     if (currentGameMedia.length > 0) {
@@ -323,6 +359,5 @@ function initGameCards() {
     });
 }
 
-// Initialize on load
-document.addEventListener('DOMContentLoaded', initGameCards);
-window.addEventListener('load', initGameCards);
+// Load games when page loads
+loadGames();
